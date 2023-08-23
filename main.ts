@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showString("Welcome to SG")
+    basic.showString("Welcome!")
 })
 input.onButtonPressed(Button.B, function () {
     basic.showString("Enjoy your stay")
