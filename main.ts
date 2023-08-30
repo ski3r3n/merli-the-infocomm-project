@@ -13,11 +13,12 @@ basic.forever(function () {
 })
 basic.forever(function () {
     if (tinkercademy.PIR(DigitalPin.P8)) {
-        pins.servoWritePin(AnalogPin.P0, 180)
+        pins.servoWritePin(AnalogPin.P2, 61)
         basic.pause(700)
-        pins.servoWritePin(AnalogPin.P0, 0)
+        pins.servoWritePin(AnalogPin.P2, 0)
+        basic.pause(700)
     }
-    basic.pause(2000)
+    pins.servoWritePin(AnalogPin.P2, 0)
 })
 basic.forever(function () {
     music.setVolume(pins.analogReadPin(AnalogPin.P1) / 4.02)
